@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E053ED5B29659D3300974FB1 /* ToDO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E053ED5929659D3300974FB1 /* ToDO.xcdatamodeld */; };
 		E053ED5E29659E8900974FB1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053ED5D29659E8800974FB1 /* CoreDataStack.swift */; };
+		E053ED602965B9A800974FB1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053ED5F2965B9A800974FB1 /* CardView.swift */; };
 		E06EF77529658DFD0039BBB8 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EF77429658DFD0039BBB8 /* UIButton + Extension.swift */; };
 		E0A8CD2825C07CB300DF9983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A8CD2725C07CB300DF9983 /* Assets.xcassets */; };
 		E0A8CD2A25C07D6E00DF9983 /* to do launch Screen .png in Resources */ = {isa = PBXBuildFile; fileRef = E0A8CD2925C07D6E00DF9983 /* to do launch Screen .png */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		E053ED5A29659D3300974FB1 /* ToDO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDO.xcdatamodel; sourceTree = "<group>"; };
 		E053ED5D29659E8800974FB1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E053ED5F2965B9A800974FB1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E06EF77429658DFD0039BBB8 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		E0A8CD2725C07CB300DF9983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0A8CD2925C07D6E00DF9983 /* to do launch Screen .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "to do launch Screen .png"; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		E053ED612965BADD00974FB1 /* CustomeView */ = {
+			isa = PBXGroup;
+			children = (
+				E053ED5F2965B9A800974FB1 /* CardView.swift */,
+			);
+			path = CustomeView;
+			sourceTree = "<group>";
+		};
 		E06EF77629658EEE0039BBB8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 				E053ED5C29659E6500974FB1 /* CoreData */,
 				E0DB52D725BDD19000EB512D /* Helper */,
 				E06EF77629658EEE0039BBB8 /* Extensions */,
+				E053ED612965BADD00974FB1 /* CustomeView */,
 				E0DB52D425BDD16E00EB512D /* Model */,
 				E0DB52D525BDD17500EB512D /* View  */,
 				E0DB52D625BDD17B00EB512D /* Controllers */,
@@ -243,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E053ED602965B9A800974FB1 /* CardView.swift in Sources */,
 				E0DB52C525BDD16200EB512D /* TodoVC.swift in Sources */,
 				E0EFD3ED25BECB5E006F6D09 /* ToDoModel.swift in Sources */,
 				E0DB52C125BDD16200EB512D /* AppDelegate.swift in Sources */,

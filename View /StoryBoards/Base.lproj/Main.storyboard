@@ -28,7 +28,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnT-A5-sY8">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnT-A5-sY8" customClass="CardView" customModule="ToDoList" customModuleProvider="target">
                                                     <rect key="frame" x="5" y="5" width="404" height="69"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gpI-y0-VIu">
@@ -75,7 +75,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="backView" destination="SnT-A5-sY8" id="yie-um-Dz4"/>
                                             <outlet property="downBtnOutlet" destination="CT7-2m-loK" id="DlF-dD-9ky"/>
                                             <outlet property="lblitems" destination="PfD-ml-gsC" id="ue6-FE-OhM"/>
                                             <outlet property="upBtnOutlet" destination="wKW-oj-h3R" id="Twy-8G-gwP"/>

@@ -59,12 +59,14 @@ class AdditemsVC: UIViewController {
             CoreDataStack.saveData(todo: myList!)
             self.navigationController?.popViewController(animated: true)
             
+        
+            
         }else{
             
             let alert = UIAlertController(title: "Error", message: "Enetr item please ", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             alert.addAction(alertAction)
-            present(alert, animated: true, completion: nil)
+            present(alert, animated: true)
         }
     }
     
