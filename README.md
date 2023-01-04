@@ -1,7 +1,8 @@
 # TODO
- listaing all of every thing you want to do in your daily life 
+ listaing all of every thing you want to do in your daily life and you can changes priority of your tasks using arrows next to task.
 
 # Technology  used in this project : 
+
 - UIkit with StoryBoard
 - MVC design pattern 
 - Core Data for data persistence
