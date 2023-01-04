@@ -6,6 +6,8 @@
 - UIkit with StoryBoard
 - MVC design pattern 
 - Core Data for data persistence
+- using custom Views For Cell 
+- using Extension on button
 
 
 ## ScreenShots: 
