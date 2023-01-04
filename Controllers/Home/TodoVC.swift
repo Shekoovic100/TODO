@@ -21,6 +21,8 @@ class TodoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        arrTodo = CoreDataStack.getToDO()
+        tableView.reloadData()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -105,10 +107,10 @@ extension TodoVC: UITableViewDelegate,UITableViewDataSource {
         
         let del = UIContextualAction(style: .normal, title: "Delete") { (action, view, completion) in
             self.arrTodo.remove(at: indexPath.row)
+            CoreDataStack.deleteToDo(index: indexPath.row)
             self.tableView.reloadData()
             
         }
-        
         let swip = UISwipeActionsConfiguration(actions: [del])
         swip.performsFirstActionWithFullSwipe = false
         return swip
@@ -121,7 +123,5 @@ extension TodoVC : todoItems{
         arrTodo.append(item)
         tableView.reloadData()
     }
-    
-    
 }
 

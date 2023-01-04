@@ -37,6 +37,7 @@ class AdditemsVC: UIViewController {
         super.viewDidLoad()
 
        setupUI()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -48,8 +49,6 @@ class AdditemsVC: UIViewController {
             
         }
     }
-    
-
    //MARK: -:- IbACtions:-
     
     @IBAction func addNewItemBtnPressed(_ sender: UIButton) {
@@ -57,6 +56,7 @@ class AdditemsVC: UIViewController {
             
             myList = getToDo(list: toDoTF.text!)
             AdditemsVC.flag = 1
+            CoreDataStack.saveData(todo: myList!)
             self.navigationController?.popViewController(animated: true)
             
         }else{
@@ -71,7 +71,21 @@ class AdditemsVC: UIViewController {
     //MARK:- Helper Functions :
     
     func setupUI(){
+        
         navigationController?.navigationBar.prefersLargeTitles = false
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor.systemYellow
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
 
+    
+    
+    func setApperance(){
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor.systemYellow
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+    }
 }
