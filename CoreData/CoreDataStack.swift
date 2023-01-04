@@ -29,8 +29,6 @@ class CoreDataStack {
         do {
             try manageContext.save()
             print("success")
-            
-            
         }catch{
             print("Error !!!")
         }

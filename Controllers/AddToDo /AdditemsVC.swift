@@ -59,8 +59,6 @@ class AdditemsVC: UIViewController {
             CoreDataStack.saveData(todo: myList!)
             self.navigationController?.popViewController(animated: true)
             
-        
-            
         }else{
             
             let alert = UIAlertController(title: "Error", message: "Enetr item please ", preferredStyle: .alert)
@@ -70,21 +68,11 @@ class AdditemsVC: UIViewController {
         }
     }
     
-    //MARK:- Helper Functions :
+ //MARK: - Helper Function
     
     func setupUI(){
         
         navigationController?.navigationBar.prefersLargeTitles = false
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = UIColor.systemYellow
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-    }
-
-    
-    
-    func setApperance(){
-        
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor.systemYellow
         navigationController?.navigationBar.standardAppearance = appearance
